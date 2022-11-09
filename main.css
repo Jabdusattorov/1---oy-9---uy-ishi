@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1519px;
+    height: 4300px;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 1px solid;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 150px;
+    background-color: white;
+}
+.nav-one{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.nav-one span:nth-of-type(1){
+    color: rgba(0, 0, 0, 0.625);
+    font-size: 25px;
+    font-weight: 700;
+}
+.nav-one span:nth-of-type(2){
+    color: rgb(0, 121, 0);
+    font-size: 25px;
+    font-weight: 700;
+}
+.nav-two{
+    padding-left: 120px;
+}
+.nav-two a{
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    padding: 0px 20px;
+    transition: all 0.2s linear;
+}
+.nav-two a:hover{
+    color: black;
+}
+.sign-in{
+    text-decoration: none;
+    color: rgb(0, 121, 0);
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+    padding: 1em 2em;
+    font-weight: 600;
+    font-size: smaller;
+    transition: all 0.1s linear;
+}
+.sign-in:hover{
+    color: whitesmoke;
+    background-color: rgb(0, 121, 0);
+}
+.sign-up{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 121, 0);
+    border-radius: 10px;
+    padding: 1em 2em;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: smaller;
+    transition: all 0.1s linear;
+}
+.sign-up:hover{
+    color: rgb(0, 121, 0);
+    background-color: rgb(212, 212, 212);
+}
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/sec-one-back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    height: 645px;
+}
+header h1{
+    color: white;
+    padding: 180px 0px 0px 0px;
+    font-size: 50px;
+    line-height: 65px;
+}
+header h6{
+    color: rgb(212, 212, 212);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 35px 0px 60px 0px;
+}
+.explore{
+    text-decoration: none;
+    background-color: rgb(0, 121, 0);
+    color: rgb(216, 216, 216);
+    border-radius: 2px;
+    padding: 15px 30px;
+    font-weight: 600;
+    transition: all 0.09s linear;
+    border: 2px solid transparent;
+}
+.explore:hover{
+    border: 2px solid rgb(0, 121, 0);
+    background-color: transparent;
+    color: rgb(0, 121, 0);
+}
+.positsion{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    height: 100px;
+    color: black;
+    margin: 150px auto;
+    border-radius: 20px;
+    padding: 20px 0px;
+    box-shadow: 2px 2px 10px 2px rgb(149, 149, 149);
+}
+.pos-card{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.pos-card h1{
+    padding: 0;
+    color: rgb(0, 121, 0);
+    padding-right: 10px;
+}
+.pos-card:nth-of-type(2){
+    border-right: 3px solid rgb(162, 162, 162);
+    border-left: 3px solid rgb(162, 162, 162);
+}
+
+.h2-one{
+    padding: 150px 0px 20px 150px;
+    color: rgba(0, 0, 0, 0.844);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.216);
+}
+.popular-categories{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0px 150px;
+}
+.popular-categories h4{
+    color: whitesmoke;
+    font-size: 30px;
+    padding-bottom: 11px;
+}
+.popular-categories h6{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 200;
+}
+.pop-card-one{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/living-room.jpg);
+    width: 23%;
+    height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+.pop-card-two{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/badroom.jpg);
+    width: 23%;
+    height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+.pop-card-three{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/bathroom.jpg);
+    width: 23%;
+    height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+.pop-card-four{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/kitchen.jpg);
+    width: 23%;
+    height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+
+.discover{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0px 150px;
+    margin-bottom: 100px;
+}
+.dis-card{
+    width: 23%;
+    height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #fff;
+}
+.dis-card-second{
+    padding: 10px;
+}
+.dis-card-second h4:nth-of-type(1){
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(0, 0, 0, 0.79);
+    padding-top: 3px;
+}
+.dis-card-second h4:nth-of-type(2){
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.797);
+}
+.stars{
+    padding: 5px 0px;
+    display: flex; 
+    align-items: center;
+}
+.stars img{
+    width: 22px;
+    margin: 0px 2px 3px 2px;
+}
+.stars small{
+    color: grey;
+    vertical-align: middle;
+}
+.dis-card-first-one img{
+    width: 30px;
+    border-radius: 7px;
+}
+.dis-card-first-one{
+    height: 70%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/Chair.jpg);
+    text-align: right;
+    background-size: cover;
+    padding: 10px;
+}
+.dis-card-first-two img{
+    width: 30px;
+    border-radius: 7px;
+}
+.dis-card-first-two{
+    height: 70%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/badroom.jpg);
+    text-align: right;
+    background-size: cover;
+    padding: 10px;
+}
+.dis-card-first-three img{
+    width: 30px;
+    border-radius: 7px;
+}
+.dis-card-first-three{
+    height: 70%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/bathroom.jpg);
+    text-align: right;
+    background-size: cover;
+    padding: 10px;
+}
+.dis-card-first-four img{
+    width: 30px;
+    border-radius: 7px;
+}
+.dis-card-first-four{
+    height: 70%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/Chair-second.jpg);
+    text-align: right;
+    background-size: cover;
+    padding: 10px;
+}
+
+.section-about{
+    display: flex;
+    align-items: center;
+    height: 550px;
+}
+.sect-abo-one{
+    width: 50%;
+    background-image: url(images/badroom.jpg);
+    height: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.sect-abo-two{
+    width: 50%;
+    padding: 0px 70px;
+}
+.sect-abo-two h4{
+    color: rgb(0, 121, 0);
+    font-size: x-large;
+}
+.sect-abo-two h1{
+    font-size: 35px;
+    padding: 20px 0px;
+}
+.sect-abo-two h6{
+    font-size: 16px;
+    color: grey;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.buttons{
+    margin-top: 50px;
+}
+.order{
+    text-decoration: none;
+    color: rgb(0, 121, 0);
+    border: 2px solid rgb(0, 121, 0);
+    border-radius: 2px;
+    padding: 13px 30px;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: all 0.09s linear;
+}
+.order:hover{
+    background-color: rgb(0, 121, 0);
+    color: whitesmoke;
+}
+
+.happy-customer{
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    padding: 0px 120px 0px 150px;
+    height: 550px;
+    margin-top: 100px;
+}
+.happy-customer-one{
+    width: 40%;
+}
+.happy-customer-one h4{
+    color: rgb(0, 121, 0);
+    font-size: 25px;
+    font-weight: 600;
+}
+.happy-customer-one h1{
+    color: whitesmoke;
+    font-size: 35px;
+    padding: 30px 0px;
+}
+.users-group{
+    display: flex;
+    align-items: center;
+}
+.users-group img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -7px;
+    margin-bottom: 44px;
+}
+.happy-customer-two{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+.happy-customer-two div{
+    margin-right: 10px;
+}
+.happy-customer-two>div:nth-of-type(1){
+    margin-top: 100px;
+}
+.happy-cus-card{
+    background-color: white;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+.hap-cus-user{
+    height: 40%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.hap-cus-user>img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.hap-cus-user h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+.hap-cus-text h4{
+    color: rgb(0, 121, 0);
+    font-size: 25px;
+    padding: 20px 0px;
+}
+.hap-cus-text small{
+    font-size: 17px;
+    color: grey;
+}
+
+
+.make{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/make-back.jpg);
+    margin: 120px 140px;
+    padding: 120px 0px;
+    text-align: center;
+}
+.make h1{
+    font-size: 45px;
+    color: white;
+    padding-bottom: 25px;
+}
+.make div{
+    color: rgb(199, 199, 199);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.make .explore:hover{
+    background-color: rgb(4, 43, 4);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 150px 50px;
+    border-top: 2px solid #777;
+}
+.foot-one div{
+    margin-bottom: 20px;
+}
+.foot-one div:nth-of-type(2){
+    color: rgb(162, 162, 162);
+}
+.foot-two strong{
+    font-size: larger;
+}
+.foot-two p, a{
+    padding-top: 20px;
+    color: rgb(162, 162, 162);
+    text-decoration: none;
+}
+.copy{
+    color: rgb(162, 162, 162);
+    text-align: center;
+    padding-bottom: 100px;
+}
